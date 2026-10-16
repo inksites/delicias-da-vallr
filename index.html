@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Delícias da Vallr · Bolos personalizados em Teresina</title>
-<meta name="description" content="Bolos personalizados com o tema da sua festa, kits festa, docinhos e caixinhas de brigadeiro. Encomendas e pronta entrega em Teresina, PI.">
-<meta name="theme-color" content="#FFF4F1">
+<meta name="description" content="Bolos personalizados com o tema da sua festa, kits festa, bento cake, bolo vulcão e caixinhas de brigadeiro. Encomendas e pronta entrega em Teresina, PI.">
+<meta name="theme-color" content="#B8435A">
 <meta name="robots" content="noindex">
 <meta property="og:title" content="Delícias da Vallr · Bolos personalizados">
 <meta property="og:description" content="Felicidade em forma de chocolate. Bolos com o tema da sua festa, em Teresina.">
@@ -14,385 +14,368 @@
 <link rel="icon" href="assets/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500..700,100;1,9..144,500,100&family=Damion&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,600,100;1,9..144,500,100&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Bakery","name":"Delícias da Vallr","description":"Bolos personalizados, kits festa, docinhos e caixinhas de brigadeiro. Encomendas e pronta entrega.","telephone":"+55 86 99584-9283","areaServed":"Teresina, PI","address":{"@type":"PostalAddress","addressLocality":"Teresina","addressRegion":"PI","addressCountry":"BR"},"sameAs":["https://www.instagram.com/deliciasdavallr/"]}
 </script>
 <style>
 :root{
-  --canvas:#FFF4F1; --canvas2:#FCE6E2; --rosa:#E5677A; --rosa-esc:#B8435A; --rosa-soft:#F8CDD0;
-  --choco:#3B2320; --choco2:#5A362F; --leite:#8A5A4C; --ouro:#C79A55; --muted:#7B5C55;
-  --e1:cubic-bezier(.22,.8,.24,1); --e2:cubic-bezier(.65,0,.35,1);
-  --r:22px;
+  --fundo:#FBF7F6; --card:#FFFFFF; --rosa:#E5677A; --rosa-esc:#B8435A; --rosa-claro:#FCE8EA;
+  --choco:#3B2320; --texto:#3B2320; --muted:#7B6560; --linha:#EFE3E0; --verde:#1F9D55;
+  --e:cubic-bezier(.22,.8,.24,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{overflow-x:hidden;overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:80px}
-body{overflow-x:hidden;overflow-x:clip;background:var(--canvas);color:var(--choco);font:400 17px/1.6 Nunito,system-ui,sans-serif;-webkit-font-smoothing:antialiased;animation:abre .8s var(--e1) both}
-@keyframes abre{from{opacity:0}}
+html{overflow-x:hidden;overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:130px}
+body{overflow-x:hidden;overflow-x:clip;background:var(--fundo);color:var(--texto);font:400 16px/1.55 Nunito,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit}
-button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+button,select{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
 .skip{position:absolute;left:-999px;top:8px;background:var(--choco);color:#fff;padding:10px 16px;border-radius:10px;z-index:99}
 .skip:focus{left:8px}
 :focus-visible{outline:3px solid var(--rosa);outline-offset:3px;border-radius:8px}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;font-weight:650;line-height:1.05;letter-spacing:-.01em}
-h2{font-size:clamp(34px,5vw,58px)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-variation-settings:"SOFT" 100;font-weight:600;line-height:1.1}
+h2{font-size:clamp(28px,3.4vw,40px)}
 h2 em,h1 em{font-style:italic;font-weight:500;color:var(--rosa-esc)}
-.kick{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--rosa-esc)}
-.lede{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:52ch}
-.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
-section{position:relative}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:800;font-size:15px;text-decoration:none;transition:transform .35s var(--e1),background .35s var(--e1),box-shadow .35s var(--e1)}
-.btn-pri{background:var(--rosa-esc);color:#fff;box-shadow:0 10px 28px -12px rgba(184,67,90,.7)}
-.btn-pri:hover{transform:translateY(-2px);background:#A63A50}
-.btn-sec{background:transparent;color:var(--choco);box-shadow:inset 0 0 0 2px var(--choco)}
-.btn-sec:hover{background:var(--choco);color:var(--canvas)}
-.btn svg{width:18px;height:18px;flex:none}
+.kick{display:block;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--rosa-esc);margin-bottom:10px}
+.wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+.sec{padding:72px 0}
+.sec-top{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.sec-top p{color:var(--muted);max-width:52ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:800;font-size:15px;text-decoration:none;transition:transform .3s var(--e),background .3s var(--e)}
+.btn-pri{background:var(--rosa-esc);color:#fff}
+.btn-pri:hover{background:#A33A4F;transform:translateY(-1px)}
+.btn-sec{color:var(--choco);box-shadow:inset 0 0 0 2px var(--choco)}
+.btn-sec:hover{background:var(--choco);color:#fff}
+.rev{opacity:0;transform:translateY(18px);transition:opacity .7s var(--e),transform .7s var(--e)}
+.rev.in{opacity:1;transform:none}
 
-/* fundo vivo: brilho rosado que passeia */
-.amb{position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:radial-gradient(40% 35% at 20% 30%,rgba(248,205,208,.55),transparent 70%),radial-gradient(35% 30% at 80% 70%,rgba(199,154,85,.14),transparent 70%);animation:amb 70s ease-in-out infinite alternate}
-@keyframes amb{to{transform:translate3d(6%,-4%,0) rotate(8deg)}}
+/* ===== topo: marca + barra de categorias ===== */
+header{position:sticky;top:0;z-index:50;background:var(--card);box-shadow:0 1px 0 var(--linha)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;line-height:1.1}
+.logo img{width:52px;height:52px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--rosa)}
+.logo b{display:block;font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-weight:600;font-size:19px}
+.logo small{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);font-weight:600}
+.logo small::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--verde)}
+.top-acoes{display:flex;align-items:center;gap:18px}
+.top-zap{display:flex;align-items:center;gap:10px;text-decoration:none;line-height:1.2}
+.top-zap svg{width:30px;height:30px;fill:var(--verde)}
+.top-zap span{font-size:12px;color:var(--muted);font-weight:700}
+.top-zap b{display:block;font-size:15px;color:var(--texto)}
+.sacola-top{position:relative;display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;padding:10px 16px;border-radius:999px;background:var(--rosa-claro);color:var(--rosa-esc);text-decoration:none}
+.sacola-top svg{width:20px;height:20px;fill:currentColor}
+.sacola-top i{font-style:normal;min-width:20px;height:20px;border-radius:10px;background:var(--rosa-esc);color:#fff;font-size:12px;display:grid;place-items:center;padding:0 5px}
+.cats{background:var(--rosa-esc)}
+.cats ul{list-style:none;display:flex;justify-content:center;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cats ul::-webkit-scrollbar{display:none}
+@media (max-width:1100px){.cats ul{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}}
+.cats a{display:block;white-space:nowrap;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:13px 16px;opacity:.92;transition:opacity .2s,background .2s}
+.cats a:hover,.cats a.on{opacity:1;background:rgba(255,255,255,.14)}
+@media (max-width:1100px){.cats ul{justify-content:flex-start}}
+@media (max-width:860px){.top-zap div{display:none}}
+@media (max-width:480px){.top-in .logo small{display:none}.logo b{font-size:17px}.logo img{width:46px;height:46px}.sacola-top span{display:none}}
 
-/* nav */
-nav{position:fixed;inset:0 0 auto;z-index:50;background:var(--canvas);transition:box-shadow .4s var(--e1)}
-nav.solid{box-shadow:0 8px 24px -16px rgba(59,35,32,.35)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;gap:18px;height:72px}
-.logo{display:flex;align-items:center;gap:6px;text-decoration:none;line-height:1}
-.logo img{width:46px;height:46px;border-radius:50%;object-fit:cover;margin-right:6px;box-shadow:0 0 0 2px var(--canvas),0 0 0 3.5px var(--rosa)}
-.logo small{font-family:Fraunces,serif;font-weight:600;font-size:15px;font-variation-settings:"SOFT" 100;color:var(--choco)}
-.logo b{font-family:Damion,cursive;font-weight:400;font-size:34px;color:var(--rosa-esc)}
-.nav-links{display:flex;gap:26px;list-style:none;font-weight:600;font-size:15px}
-.nav-links a{text-decoration:none;position:relative}
-.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--rosa);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--e1)}
-.nav-links a:hover::after{transform:scaleX(1)}
-.nav .btn{padding:11px 20px;font-size:14px}
-@media (max-width:860px){.nav-links{display:none}}
-@media (max-width:520px){nav .logo small,nav .logo b{display:none}nav .logo img{width:50px;height:50px}}
-nav .btn{white-space:nowrap}
-
-/* ===== CAPA ===== */
-.hero{height:290vh}
-.stage{position:sticky;top:0;height:100vh;height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:170px max(16px,(100% - 1180px)/2) 40px;overflow:hidden}
-.calda{position:absolute;left:0;right:0;top:71px;height:120px;pointer-events:none;z-index:2}
+/* ===== capa ===== */
+.capa{position:relative;background:var(--card);overflow:hidden}
+.calda{position:absolute;left:0;right:0;top:0;height:70px;pointer-events:none}
 .calda svg{width:100%;height:100%;display:block}
-.calda .gota{transform-box:fill-box;transform-origin:50% 0;transform:scaleY(var(--g,.45));transition:transform .2s linear}
-.hero-txt{position:relative;z-index:3;max-width:560px}
-.hero-txt .kick{margin-bottom:22px}
-.hero h1{font-size:clamp(46px,6.4vw,92px);margin-bottom:22px}
-.hero h1 .w{display:inline-block;opacity:0;transform:translateY(-26px);transition:opacity .7s var(--e1),transform .9s var(--e1)}
-.hero.in h1 .w{opacity:1;transform:none}
-.hero .lede{margin-bottom:32px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
-.hero-sub{margin-top:26px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;font-weight:600;color:var(--muted)}
-.hero-sub span{display:inline-flex;align-items:center;gap:8px}
-.hero-sub span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rosa)}
-.vitrine{position:relative;justify-self:center;width:min(440px,100%);aspect-ratio:4/5.15}
-.arco{position:absolute;inset:0 0 9% 0;border-radius:999px 999px 26px 26px;overflow:hidden;background:var(--canvas2);box-shadow:0 40px 60px -40px rgba(59,35,32,.55)}
-.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .9s var(--e2),transform 1.4s var(--e1)}
-.slide.on{opacity:1;transform:scale(1)}
-.prato{position:absolute;left:-7%;right:-7%;bottom:2%;height:10%;border-radius:50%;background:radial-gradient(closest-side,rgba(59,35,32,.22),transparent);z-index:-1}
-.etq{position:absolute;left:-28px;bottom:16%;z-index:3;background:var(--canvas);border-radius:16px;padding:12px 16px;box-shadow:0 18px 40px -18px rgba(59,35,32,.45);min-width:200px}
-.etq small{display:block;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--rosa-esc)}
-.etq b{display:block;font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-weight:600;font-size:18px;line-height:1.25;transition:opacity .4s}
-.pontos{position:absolute;right:-6px;top:50%;transform:translateY(-50%);display:grid;gap:10px;z-index:3}
-.pontos i{width:8px;height:8px;border-radius:50%;background:var(--rosa-soft);transition:background .4s,transform .4s var(--e1)}
-.pontos i.on{background:var(--rosa-esc);transform:scale(1.5)}
-.rola{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:8px;z-index:3}
-.rola::after{content:"";width:2px;height:34px;background:linear-gradient(var(--rosa),transparent);animation:rola 2.4s var(--e2) infinite}
-@keyframes rola{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-
-/* capa estática: celular, tablet em pé, movimento reduzido */
-@media (max-width:720px),(orientation:portrait) and (max-width:1024px),(orientation:portrait) and (pointer:coarse),(orientation:landscape) and (pointer:coarse) and (max-height:560px),(prefers-reduced-motion:reduce){
-  .hero{height:auto}
-  .stage{position:relative;height:auto;min-height:0;grid-template-columns:1fr;gap:4px;padding:112px 16px 48px}
-  .vitrine{order:-1;width:min(230px,58%)}
-  .hero h1{font-size:clamp(38px,10.5vw,46px);margin-bottom:14px}
-  .hero .lede{font-size:16px;margin-bottom:22px}
-  .hero-txt .kick{margin-bottom:12px}
-  .etq{padding:9px 12px}.etq b{font-size:15px}
-  .etq{left:-14px;min-width:0;max-width:78%}
-  .pontos{right:-14px}
-  .rola{display:none}
-  .calda{height:64px}
+.capa-in{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:96px 0 56px}
+.capa h1{font-size:clamp(36px,4.8vw,60px);margin-bottom:16px}
+.capa p{color:var(--muted);font-size:18px;max-width:46ch;margin-bottom:28px}
+.capa-cta{display:flex;flex-wrap:wrap;gap:12px}
+.vitrine{position:relative;justify-self:center;width:min(400px,100%);aspect-ratio:4/5;border-radius:999px 999px 24px 24px;overflow:hidden;background:var(--rosa-claro);box-shadow:0 30px 50px -30px rgba(59,35,32,.5)}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+.slide.on{opacity:1}
+.etq{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(255,255,255,.95);border-radius:14px;padding:10px 14px;font-weight:700;font-size:14px}
+.etq small{display:block;font-size:10.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--rosa-esc)}
+@media (max-width:820px){
+  .capa-in{grid-template-columns:1fr;gap:20px;padding:64px 0 32px}
+  .vitrine{order:-1;width:min(210px,56%)}
+  .capa .kick{display:none}
+  .capa h1{font-size:34px;margin-bottom:12px}
+  .capa p{margin-bottom:20px}
+  .capa p{font-size:16px}
+  .capa-cta .btn{flex:1}
+  .calda{height:48px}
 }
-@media (max-height:560px){.rola{display:none}}
 
-/* ===== faixa de temas ===== */
-.temas{background:var(--choco);color:var(--canvas);padding:26px 0;overflow:hidden}
-.trilho{display:flex;gap:42px;width:max-content;animation:trilho 60s linear infinite}
-.temas:hover .trilho{animation-play-state:paused}
-.trilho span{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-style:italic;font-size:26px;white-space:nowrap;display:flex;align-items:center;gap:42px}
-.trilho span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--rosa)}
-@keyframes trilho{to{transform:translateX(-50%)}}
+/* faixa de vantagens */
+.vant{background:var(--card);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.vant ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:30px 0}
+.vant li{display:flex;gap:14px;align-items:flex-start}
+.vant svg{flex:none;width:34px;height:34px;padding:7px;border-radius:50%;background:var(--rosa-claro);fill:var(--rosa-esc)}
+.vant b{display:block;font-size:15px}
+.vant span{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.vant ul{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.vant ul{gap:16px 12px;padding:20px 0}.vant li{flex-direction:column;gap:8px}.vant span{font-size:13px}}
 
-/* divisor de calda */
-.div-calda{display:block;width:100%;height:70px}
+/* ===== cardápio ===== */
+.grupo{margin-top:34px}
+.grupo h3{font-family:Nunito,sans-serif;font-weight:800;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--choco);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.grupo h3::after{content:"";flex:1;height:1px;background:var(--linha)}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.prod{position:relative;background:var(--card);border-radius:18px;padding:16px;display:grid;grid-template-columns:1fr 112px;gap:14px;box-shadow:0 1px 2px rgba(59,35,32,.06),0 8px 24px -16px rgba(59,35,32,.25);transition:transform .3s var(--e),box-shadow .3s var(--e)}
+.prod:hover{transform:translateY(-2px);box-shadow:0 1px 2px rgba(59,35,32,.06),0 16px 30px -18px rgba(59,35,32,.35)}
+.prod h4{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-weight:600;font-size:18px;line-height:1.2;color:var(--rosa-esc);margin-bottom:6px}
+.prod p{font-size:14px;color:var(--muted);line-height:1.45}
+.prod .serve{display:block;font-size:13px;color:var(--muted);margin-top:6px;font-weight:600}
+.prod .preco{display:block;margin-top:10px;font-size:14px;font-weight:700}
+.prod img{width:112px;height:112px;border-radius:14px;object-fit:cover}
+.prod select{margin-top:10px;padding:7px 10px;border-radius:10px;border:1.5px solid var(--linha);background:#fff;font-size:14px;font-weight:700}
+.foto{position:relative;align-self:start}
+.add{position:absolute;right:-8px;bottom:-8px;width:38px;height:38px;border:3px solid #fff;border-radius:50%;background:var(--verde);color:#fff;display:grid;place-items:center;font-size:24px;line-height:1;font-weight:700;box-shadow:0 6px 14px -6px rgba(31,157,85,.8);transition:transform .25s var(--e)}
+.add:hover{transform:scale(1.08)}
+.add.ok{animation:pop .5s var(--e)}
+@keyframes pop{40%{transform:scale(1.25)}}
+.tag{position:absolute;left:16px;top:-9px;background:#F2B233;color:var(--choco);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.prod.destaque{box-shadow:inset 0 0 0 2px #F2B233,0 8px 24px -16px rgba(59,35,32,.25)}
+.pronta{background:var(--rosa-esc);color:#fff;grid-template-columns:1fr}
+.pronta h4{color:#fff}.pronta p{color:#FBE3E6}
+.pronta .btn{margin-top:4px;background:#fff;color:var(--rosa-esc);justify-self:start;padding:11px 18px}
+@media (max-width:980px){.prods{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.prods{grid-template-columns:1fr;gap:14px}.prod{grid-template-columns:1fr 100px}.prod img{width:100px;height:100px}.prod.pronta{grid-template-columns:1fr}}
 
 /* ===== galeria ===== */
-.galeria{padding:110px 0 120px}
-.gal-top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:38px}
-.gal-top h2{margin-top:14px}
+.galeria{background:var(--card)}
 .filtros{display:flex;flex-wrap:wrap;gap:8px}
-.filtros button{padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;box-shadow:inset 0 0 0 1.5px rgba(59,35,32,.25);transition:background .3s,color .3s,box-shadow .3s}
-.filtros button[aria-pressed="true"]{background:var(--choco);color:var(--canvas);box-shadow:none}
-.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.card{position:relative;border-radius:var(--r);overflow:hidden;background:var(--canvas2);aspect-ratio:4/5;transition:opacity .45s var(--e1),transform .45s var(--e1)}
-.card img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--e1)}
-.card:hover img{transform:scale(1.05)}
-.card figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,244,241,.94);border-radius:14px;padding:9px 13px;font-size:14px;font-weight:700;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card figcaption small{display:block;font-size:10.5px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--rosa-esc)}
+.filtros button{padding:9px 16px;border-radius:999px;font-weight:700;font-size:14px;box-shadow:inset 0 0 0 1.5px var(--linha);transition:background .2s,color .2s}
+.filtros button[aria-pressed="true"]{background:var(--choco);color:#fff;box-shadow:none}
+.grade{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:var(--rosa-claro)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--e)}
+.card:hover img{transform:scale(1.04)}
+.card figcaption{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(255,255,255,.95);border-radius:12px;padding:7px 11px;font-size:13.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card figcaption small{display:block;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--rosa-esc)}
 .card.fora{display:none}
-.gal-pe{margin-top:34px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;color:var(--muted)}
+.gal-pe{margin-top:22px;color:var(--muted)}
 .gal-pe a{font-weight:800;color:var(--rosa-esc)}
-@media (max-width:980px){.grade{grid-template-columns:repeat(2,1fr);gap:12px}.card figcaption{font-size:13px}}
-
-/* entradas */
-.rev{opacity:0;transform:translateY(28px);transition:opacity .9s var(--e1),transform .9s var(--e1)}
-.rev.in{opacity:1;transform:none}
-.grade .card.rev:nth-child(4n+2){transition-delay:.08s}
-.grade .card.rev:nth-child(4n+3){transition-delay:.16s}
-.grade .card.rev:nth-child(4n+4){transition-delay:.24s}
-.grade .card.rev.feito{transition-delay:0s}
+@media (max-width:900px){.grade{grid-template-columns:1fr 1fr;gap:10px}}
 
 /* ===== tamanhos ===== */
-.tamanhos{background:var(--canvas2);padding:110px 0}
-.tam-in{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.tam-in h2{margin:14px 0 18px}
-.aros{display:flex;gap:10px;margin:30px 0 26px;flex-wrap:wrap}
-.aros button{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;align-content:center;line-height:1.05;font-weight:800;background:var(--canvas);box-shadow:inset 0 0 0 2px rgba(59,35,32,.18);transition:background .35s var(--e1),color .35s,transform .35s var(--e1),box-shadow .35s}
-.aros button small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;opacity:.75}
-.aros button span{font-family:Fraunces,serif;font-size:26px;font-variation-settings:"SOFT" 100}
-.aros button[aria-pressed="true"]{background:var(--rosa-esc);color:#fff;box-shadow:none;transform:translateY(-3px)}
-.tam-info{min-height:170px}
-.tam-info b{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-size:30px;font-weight:650;display:block}
-.tam-info .serve{display:inline-block;margin:8px 0 12px;padding:6px 14px;border-radius:999px;background:var(--canvas);font-weight:800;font-size:14px}
-.tam-info p{color:var(--muted);max-width:44ch}#tamBtn{margin-top:26px}
-.tam-info .nota{font-size:13px;margin-top:10px}
-.mesa{position:relative;aspect-ratio:1;display:grid;place-items:center}
-.mesa::before{content:"";position:absolute;inset:4%;border-radius:50%;border:2px dashed rgba(59,35,32,.18)}
-.bolo-c{position:relative;width:calc(var(--d,.6)*92%);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 10px var(--canvas),0 30px 50px -24px rgba(59,35,32,.5);transition:width .8s var(--e1)}
-.bolo-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:0;transition:opacity .6s var(--e2)}
+.tam-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;background:var(--card);border-radius:28px;padding:44px clamp(20px,4vw,52px);box-shadow:0 8px 30px -20px rgba(59,35,32,.3)}
+.tam-in > div > p{color:var(--muted)}
+.aros{display:flex;gap:10px;margin:24px 0 20px;flex-wrap:wrap}
+.aros button{width:70px;height:70px;border-radius:50%;display:grid;align-content:center;line-height:1.05;font-weight:800;background:var(--fundo);box-shadow:inset 0 0 0 2px var(--linha);transition:background .3s,color .3s}
+.aros button small{font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.aros button span{font-family:Fraunces,serif;font-size:24px}
+.aros button[aria-pressed="true"]{background:var(--rosa-esc);color:#fff;box-shadow:none}
+.tam-info b{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-weight:600;font-size:24px;display:block}
+.tam-info .serve{display:inline-block;margin:8px 0 10px;padding:5px 12px;border-radius:999px;background:var(--rosa-claro);font-weight:800;font-size:14px}
+.tam-info p{color:var(--muted);font-size:15px}
+.tam-info .nota{font-size:12.5px;margin-top:8px}
+.mesa{position:relative;aspect-ratio:1;display:grid;place-items:center;width:min(380px,100%);justify-self:center}
+.mesa::before{content:"";position:absolute;inset:3%;border-radius:50%;border:2px dashed var(--linha)}
+.bolo-c{position:relative;width:calc(var(--d,.64)*94%);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 8px #fff,0 24px 40px -20px rgba(59,35,32,.45);transition:width .7s var(--e)}
+.bolo-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%;opacity:0;transition:opacity .5s}
 .bolo-c img.on{opacity:1}
-@media (max-width:860px){.tam-in{grid-template-columns:1fr;gap:30px}.mesa{width:min(360px,100%);margin-inline:auto;order:-1}.aros button{width:68px;height:68px}}
-
-/* ===== kits ===== */
-.kits{background:var(--choco);color:var(--canvas);padding:0 0 110px}
-.kits .div-calda{margin-bottom:80px}
-.kits h2 em{color:var(--rosa-soft)}
-.kits .kick{color:var(--rosa-soft)}
-.kits .lede{color:#E9CFC8}
-.kits-in{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
-.kits-in h2{margin:14px 0 18px}
-.lista{list-style:none;margin:26px 0 32px;display:grid;gap:12px}
-.lista li{display:flex;gap:12px;align-items:baseline}
-.lista li::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--rosa);transform:translateY(-1px)}
-.kits .btn-sec{color:var(--canvas);box-shadow:inset 0 0 0 2px var(--canvas)}
-.kits .btn-sec:hover{background:var(--canvas);color:var(--choco)}
-.kit-fotos{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:270px;gap:16px}
-.kit-fotos figure{position:relative;border-radius:var(--r);overflow:hidden}
-.kit-fotos figure:first-child{grid-row:span 2}
-.kit-fotos img{width:100%;height:100%;object-fit:cover}
-.kit-fotos figcaption{position:absolute;left:12px;top:12px;background:var(--rosa-esc);color:#fff;font-weight:800;font-size:13px;padding:7px 13px;border-radius:999px}
-@media (max-width:860px){.kits-in{grid-template-columns:1fr}.kits .div-calda{margin-bottom:56px}}
-
-/* ===== mimos ===== */
-.mimos{padding:110px 0}
-.mimos-top{max-width:640px;margin-bottom:44px}
-.mimos-top h2{margin:14px 0 16px}
-.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:300px 300px auto;gap:16px}
-.m{position:relative;border-radius:var(--r);overflow:hidden;background:var(--canvas2)}
-.m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--e1)}
-.m:hover img{transform:scale(1.05)}
-.m .t{position:absolute;inset:auto 0 0 0;padding:60px 18px 16px;background:linear-gradient(transparent,rgba(43,24,21,.86));color:#fff}
-.m .t b{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-size:22px;font-weight:650;display:block;line-height:1.15}
-.m .t span{font-size:14px;opacity:.92}
-.m1{grid-column:span 2;grid-row:span 2}
-.m6{grid-column:1/-1;background:var(--rosa-esc);color:#fff;padding:26px 34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.m6 b{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-size:26px;line-height:1.15}
-.m6 a{font-weight:800;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
-.m6 a::after{content:"→";transition:transform .3s var(--e1)}
-.m6 a:hover::after{transform:translateX(4px)}
-@media (max-width:860px){.bento{grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,220px) auto;gap:12px}.m6{flex-direction:column;align-items:flex-start;padding:24px}.m .t b{font-size:18px}.m .t{padding:50px 14px 12px}}
-
-/* ===== sabores ===== */
-.sabores{padding:0 0 110px}
-.sab-card{background:var(--canvas2);border-radius:32px;padding:56px clamp(22px,5vw,64px);display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:center;position:relative;overflow:hidden}
-.sab-card h2{font-size:clamp(30px,4vw,46px);margin-top:12px}
-.sab-lista{display:grid;gap:14px}
-.sab{background:var(--canvas);border-radius:18px;padding:18px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center}
-.sab b{font-family:Fraunces,serif;font-variation-settings:"SOFT" 100;font-weight:600;font-size:19px}
-.sab span{font-size:14px;color:var(--muted);text-align:right}
-.sab-lista p{font-size:15px;color:var(--muted)}
-@media (max-width:860px){.sab-card{grid-template-columns:1fr;padding:40px 20px;gap:26px}.sab{flex-direction:column;align-items:flex-start;gap:4px}.sab span{text-align:left}}
+#tamBtn{margin-top:20px}
+@media (max-width:820px){.tam-in{grid-template-columns:1fr;gap:20px}.mesa{order:-1;width:min(260px,80%)}.aros button{width:62px;height:62px}}
 
 /* ===== quem faz ===== */
-.quem{padding:0 0 110px}
-.quem-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
-.quem-foto{position:relative;justify-self:center;width:min(380px,100%);aspect-ratio:1}
-.quem-foto img{width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:0 0 0 12px var(--canvas),0 0 0 14px var(--rosa-soft),0 40px 60px -30px rgba(59,35,32,.5)}
-.quem-foto::after{content:"";position:absolute;inset:-26px;border-radius:50%;border:2px dashed rgba(184,67,90,.3);animation:gira 80s linear infinite}
-@keyframes gira{to{transform:rotate(360deg)}}
-.quem h2{margin:14px 0 20px}
-.quem .lede{margin-bottom:14px}
-.selos{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
-.selos li{background:var(--canvas2);border-radius:999px;padding:8px 16px;font-weight:700;font-size:14px}
+.quem-in{display:grid;grid-template-columns:.7fr 1.3fr;gap:56px;align-items:center}
+.quem-foto img{width:min(320px,100%);aspect-ratio:1;object-fit:cover;border-radius:50%;margin-inline:auto;box-shadow:0 0 0 10px #fff,0 0 0 12px var(--rosa-claro)}
+.quem p{color:var(--muted);font-size:17px;margin-bottom:12px;max-width:56ch}
+.selos{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.selos li{background:var(--card);border-radius:999px;padding:7px 14px;font-weight:700;font-size:14px;box-shadow:inset 0 0 0 1.5px var(--linha)}
 .insta{font-weight:800;color:var(--rosa-esc)}
-@media (max-width:860px){.quem-in{grid-template-columns:1fr;gap:44px}.quem-foto{width:min(240px,70%)}}
+@media (max-width:820px){.quem-in{grid-template-columns:1fr;gap:28px}.quem-foto img{width:200px}}
 
 /* ===== pedido ===== */
-.pedido{padding:110px 0;background:linear-gradient(var(--canvas),var(--canvas2))}
-.ped-in{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
-.ped-in h2{margin:14px 0 18px}
-.passos{list-style:none;counter-reset:p;display:grid;gap:22px;margin-top:34px}
-.passos li{counter-increment:p;display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start}
-.passos li::before{content:counter(p);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--rosa-esc);color:#fff;font-family:Fraunces,serif;font-size:21px;font-weight:650}
-.passos b{display:block;font-size:17px}
-.passos span{color:var(--muted);font-size:15px}
-.ficha{background:var(--canvas);border-radius:28px;padding:34px clamp(20px,3vw,40px);box-shadow:0 30px 70px -40px rgba(59,35,32,.45);position:relative}
-.barra{display:flex;gap:6px;margin-bottom:26px}
-.barra i{flex:1;height:5px;border-radius:5px;background:var(--canvas2);overflow:hidden;position:relative}
-.barra i::after{content:"";position:absolute;inset:0;background:var(--rosa-esc);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--e1)}
-.barra i.ok::after{transform:scaleX(1)}
-fieldset{border:0;min-width:0}legend{padding:0}.etapa{display:none}
-.etapa.on{display:block;animation:entra .5s var(--e1)}
-@keyframes entra{from{opacity:0;transform:translateX(14px)}}
-.etapa h3{font-size:25px;margin-bottom:6px}
-.etapa > p{color:var(--muted);font-size:15px;margin-bottom:20px}
-.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.opcoes label{position:relative;display:flex;flex-direction:column;gap:2px;padding:14px 16px;border-radius:16px;box-shadow:inset 0 0 0 1.5px rgba(59,35,32,.2);cursor:pointer;font-weight:700;font-size:15px;line-height:1.3;transition:box-shadow .25s,background .25s}
-.opcoes label small{font-weight:600;color:var(--muted);font-size:13px}
-.opcoes input{position:absolute;opacity:0;pointer-events:none}
-.opcoes label:has(input:checked){background:#FDE9EA;box-shadow:inset 0 0 0 2px var(--rosa-esc)}
-.opcoes label:has(input:focus-visible){outline:3px solid var(--rosa);outline-offset:2px}
-.campo{display:grid;gap:6px;margin-bottom:14px}
+.pedido{background:var(--card)}
+.ped-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.ped-in > div > p{color:var(--muted);margin:12px 0 24px}
+.passos{list-style:none;counter-reset:p;display:grid;gap:18px}
+.passos li{counter-increment:p;display:grid;grid-template-columns:40px 1fr;gap:14px}
+.passos li::before{content:counter(p);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--rosa-claro);color:var(--rosa-esc);font-weight:800}
+.passos b{display:block}
+.passos span{color:var(--muted);font-size:14px}
+.ficha{background:var(--fundo);border-radius:24px;padding:28px clamp(18px,3vw,34px);border:1px solid var(--linha)}
+fieldset{border:0;min-width:0}legend{padding:0}
+.barra{display:flex;gap:6px;margin-bottom:22px}
+.barra i{flex:1;height:5px;border-radius:5px;background:var(--linha)}
+.barra i.ok{background:var(--rosa-esc)}
+.etapa{display:none}
+.etapa.on{display:block;animation:entra .4s var(--e)}
+@keyframes entra{from{opacity:0;transform:translateX(10px)}}
+.etapa h3{font-size:23px;margin-bottom:4px}
+.etapa > p{color:var(--muted);font-size:14.5px;margin-bottom:16px}
+.lista-sac{list-style:none;display:grid;gap:8px;margin-bottom:16px}
+.lista-sac:empty{display:none}
+.lista-sac li{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border-radius:12px;padding:10px 12px;font-weight:700;font-size:15px}
+.lista-sac button{width:30px;height:30px;border-radius:50%;background:var(--fundo);font-size:18px;color:var(--muted)}
+.vazia{background:#fff;border-radius:12px;padding:14px;color:var(--muted);font-size:14.5px;margin-bottom:14px}
+.vazia[hidden]{display:none}
+.rapido{display:flex;flex-wrap:wrap;gap:8px}
+.rapido button{padding:8px 13px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--linha);font-size:13.5px;font-weight:700}
+.rapido button:hover{box-shadow:inset 0 0 0 1.5px var(--rosa-esc);color:var(--rosa-esc)}
+.rap-tam{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:14px;font-weight:700}
+.rap-tam select{padding:6px 10px;border-radius:10px;border:1.5px solid var(--linha);background:#fff;font-weight:700}
+.campo{display:grid;gap:5px;margin-bottom:12px}
 .campo span{font-weight:700;font-size:14px}
-.campo input,.campo textarea{font:inherit;font-size:16px;padding:13px 15px;border-radius:14px;border:1.5px solid rgba(59,35,32,.25);background:#fff;color:var(--choco);width:100%}
-.campo textarea{min-height:84px;resize:vertical}
-.campo input:focus,.campo textarea:focus{outline:none;border-color:var(--rosa-esc);box-shadow:0 0 0 3px rgba(229,103,122,.2)}
-.duas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.check{display:flex;gap:10px;align-items:center;font-size:15px;font-weight:600;margin:4px 0 14px;cursor:pointer}
+.campo input,.campo textarea{font:inherit;font-size:16px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--linha);background:#fff;color:var(--texto);width:100%}
+.campo textarea{min-height:76px;resize:vertical}
+.campo input:focus,.campo textarea:focus{outline:none;border-color:var(--rosa-esc)}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.check{display:flex;gap:10px;align-items:center;font-size:15px;font-weight:600;margin:2px 0 12px;cursor:pointer}
 .check input{width:20px;height:20px;accent-color:var(--rosa-esc)}
-.nav-ficha{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
-.nav-ficha .btn{padding:14px 22px}
-.voltar{font-weight:700;color:var(--muted);padding:14px 4px}
+.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.opcoes label{position:relative;padding:12px 14px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1.5px var(--linha);cursor:pointer;font-weight:700;font-size:15px;line-height:1.3}
+.opcoes label small{display:block;font-weight:600;color:var(--muted);font-size:13px}
+.opcoes input{position:absolute;opacity:0}
+.opcoes label:has(input:checked){background:var(--rosa-claro);box-shadow:inset 0 0 0 2px var(--rosa-esc)}
+.opcoes label:has(input:focus-visible){outline:3px solid var(--rosa);outline-offset:2px}
+.nav-ficha{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px}
+.voltar{font-weight:700;color:var(--muted);padding:12px 4px}
 .voltar[hidden]{display:none}
-.resumo{background:var(--canvas2);border-radius:18px;padding:18px 20px;font-size:15px;white-space:pre-line;line-height:1.55;margin-bottom:6px}
-.aviso{font-size:13px;color:var(--muted);margin-top:12px}
-.alt{margin-top:18px;font-size:14px;color:var(--muted);text-align:center}
-.alt a{font-weight:800;color:var(--rosa-esc)}
-@media (max-width:860px){.ped-in{grid-template-columns:1fr;gap:40px}.opcoes{grid-template-columns:1fr}.duas{grid-template-columns:1fr}}
+.erro{color:var(--rosa-esc);font-weight:700;font-size:14px;margin-top:8px;min-height:1em}
+.resumo{background:#fff;border-radius:14px;padding:14px 16px;font-size:14.5px;white-space:pre-line;line-height:1.5}
+.aviso{font-size:12.5px;color:var(--muted);margin-top:10px}
+.alt{margin-top:16px;font-size:14px;color:var(--muted);text-align:center}
+.alt a{font-weight:800;color:var(--verde)}
+@media (max-width:820px){.ped-in{grid-template-columns:1fr;gap:28px}.duas,.opcoes{grid-template-columns:1fr}}
 
-/* ===== faq ===== */
-.faq{padding:110px 0}
-.faq-in{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
-.faq-in h2{margin-top:14px}
-details{border-bottom:1.5px solid rgba(59,35,32,.14)}
-summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:800;font-size:18px;position:relative}
+/* ===== dúvidas ===== */
+.faq-in{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px}
+details{border-bottom:1px solid var(--linha)}
+summary{list-style:none;cursor:pointer;padding:18px 40px 18px 0;font-weight:800;font-size:17px;position:relative}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-7px;background:linear-gradient(var(--rosa-esc),var(--rosa-esc)) center/14px 2px no-repeat,linear-gradient(var(--rosa-esc),var(--rosa-esc)) center/2px 14px no-repeat;transition:transform .35s var(--e1)}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding:0 0 22px;color:var(--muted);max-width:60ch}
-@media (max-width:860px){.faq-in{grid-template-columns:1fr;gap:20px}}
+summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;color:var(--rosa-esc);transition:transform .3s var(--e)}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 0 18px;color:var(--muted);max-width:60ch}
+@media (max-width:820px){.faq-in{grid-template-columns:1fr;gap:10px}}
 
-/* ===== final ===== */
-.final{background:var(--rosa-esc);color:#fff;text-align:center;padding:0 0 110px}
-.final .div-calda{margin-bottom:70px}
-.final h2{font-size:clamp(38px,6vw,72px);margin-bottom:18px}
-.final h2 em{color:#2A1715}
-.final p{max-width:46ch;margin:0 auto 34px;opacity:.95}
-.final .btn-pri{background:var(--choco);box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
-.final .btn-pri:hover{background:#2A1715}
-.final .btn-sec{color:#fff;box-shadow:inset 0 0 0 2px #fff}
-.final .btn-sec:hover{background:#fff;color:var(--rosa-esc)}
-.final .acoes{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-footer{background:var(--choco);color:#E9CFC8;padding:34px 0;font-size:14px}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline}
-.foot .logo small{color:var(--canvas)}
-.foot .logo b{color:var(--rosa-soft)}
+/* ===== rodapé ===== */
+footer{background:var(--choco);color:#E9D6D1;padding:48px 0 96px;font-size:14px}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+.foot h5{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:10px}
 .foot a{color:#fff}
+.foot .logo b{color:#fff}
+.foot .logo small{color:#E9D6D1}
+.foot p{margin-top:6px}
+.credito{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;font-size:13px;opacity:.75}
+@media (max-width:820px){.foot{grid-template-columns:1fr;gap:24px}}
 
-/* botão flutuante */
-.zap{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1F9D55;display:grid;place-items:center;box-shadow:0 12px 26px -10px rgba(0,0,0,.45);transform:scale(0);transition:transform .5s var(--e1)}
-.zap.on{transform:scale(1)}
+/* barra da sacola */
+.barra-sac{position:fixed;left:50%;bottom:16px;z-index:60;transform:translate(-50%,160%);width:min(560px,calc(100% - 24px));background:var(--choco);color:#fff;border-radius:18px;padding:10px 10px 10px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 18px 40px -16px rgba(0,0,0,.55);transition:transform .45s var(--e)}
+.barra-sac.on{transform:translate(-50%,0)}
+.barra-sac b{font-size:15px}
+.barra-sac span{display:block;font-size:12.5px;opacity:.8}
+.barra-sac .btn{padding:12px 18px;background:var(--verde);color:#fff;white-space:nowrap}
+.zap{position:fixed;right:16px;bottom:16px;z-index:59;width:56px;height:56px;border-radius:50%;background:var(--verde);display:grid;place-items:center;box-shadow:0 12px 26px -10px rgba(0,0,0,.45);transition:transform .4s var(--e)}
 .zap svg{width:28px;height:28px;fill:#fff}
-.zap.esconde{transform:scale(0)}
-@media (max-width:720px){.zap{width:52px;height:52px;right:14px;bottom:14px}.zap svg{width:25px;height:25px}}
-
-@media (pointer:coarse){.btn{min-height:48px}.filtros button{min-height:44px}}
-
-/* pausa fora da tela / aba escondida */
-body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;transition-delay:0s!important}
-  .rev{opacity:1;transform:none}
-  .hero h1 .w{opacity:1;transform:none}
-  .calda .gota{transform:none}
-  html{scroll-behavior:auto}
-}
+.zap.some{transform:scale(0)}
+@media (pointer:coarse){.btn{min-height:46px}.filtros button{min-height:42px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rev{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
-<div class="amb" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="zapico" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol></svg>
 
-<nav id="nav" aria-label="Principal">
-  <div class="wrap nav-in">
-    <a class="logo" href="#topo" aria-label="Delícias da Vallr, início"><img src="assets/logo.jpg" alt="" width="46" height="46"><small>Delícias da</small><b>Vallr</b></a>
-    <ul class="nav-links">
+<header>
+  <div class="wrap top-in">
+    <a class="logo" href="#topo" aria-label="Delícias da Vallr, início"><img src="assets/logo.jpg" alt="" width="52" height="52"><div><b>Delícias da Vallr</b><small>Encomendas e pronta entrega</small></div></a>
+    <div class="top-acoes">
+      <a class="top-zap" href="https://wa.me/5586995849283?text=Oi%2C%20Val%C3%A9ria!%20Vi%20seu%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="WhatsApp (86) 99584-9283"><svg aria-hidden="true"><use href="#zapico"/></svg><div><span>WhatsApp</span><b>(86) 99584-9283</b></div></a>
+      <a class="sacola-top" href="#pedido" aria-label="Ver sacola"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 14H5L4 7h3zm2 0h6V6a3 3 0 0 0-6 0v1z"/></svg><span>Sacola</span><i id="contTop">0</i></a>
+    </div>
+  </div>
+  <nav class="cats" aria-label="Categorias">
+    <ul>
       <li><a href="#bolos">Bolos</a></li>
+      <li><a href="#kits">Kit festa</a></li>
+      <li><a href="#mimos">Caixinhas e mimos</a></li>
+      <li><a href="#hoje">Pra hoje</a></li>
+      <li><a href="#galeria">Temas que já fiz</a></li>
       <li><a href="#tamanhos">Tamanhos</a></li>
-      <li><a href="#kits">Kits festa</a></li>
-      <li><a href="#mimos">Mimos</a></li>
+      <li><a href="#pedido">Fazer pedido</a></li>
       <li><a href="#perguntas">Dúvidas</a></li>
     </ul>
-    <a class="btn btn-pri" href="#pedido">Fazer pedido</a>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <main id="main" tabindex="-1">
 
-<section class="hero" id="topo" aria-label="Apresentação">
-  <div class="stage">
-    <div class="calda" aria-hidden="true"><svg id="caldaTopo" viewBox="0 0 1440 120" preserveAspectRatio="none"></svg></div>
-    <div class="hero-txt">
+<section class="capa" id="topo" aria-label="Apresentação">
+  <div class="calda" aria-hidden="true"><svg id="caldaTopo" viewBox="0 0 1440 70" preserveAspectRatio="none"></svg></div>
+  <div class="wrap capa-in">
+    <div>
       <span class="kick">Felicidade em forma de chocolate</span>
-      <h1 aria-label="O bolo com a cara da sua festa."><span class="w">O</span> <span class="w">bolo</span> <span class="w">com</span> <span class="w">a</span> <span class="w">cara</span> <span class="w">da</span> <span class="w"><em>sua</em></span> <span class="w"><em>festa.</em></span></h1>
-      <p class="lede">Bolos personalizados, kits festa e docinhos feitos pela Valéria, em Teresina. Você conta o tema, ela faz o bolo. Bonito na foto e gostoso na hora de cortar.</p>
-      <div class="hero-cta">
-        <a class="btn btn-pri" href="#pedido">Montar meu pedido</a>
-        <a class="btn btn-sec" href="#bolos">Ver os bolos</a>
+      <h1>Bolos personalizados com a <em>cara da sua festa.</em></h1>
+      <p>Você escolhe o tema, a Valéria faz o bolo, com nome e idade no topo. Também tem kit festa, docinhos e caixinhas de brigadeiro. Entrega de moto em Teresina.</p>
+      <div class="capa-cta">
+        <a class="btn btn-pri" href="#cardapio">Ver cardápio</a>
+        <a class="btn btn-sec" href="#pedido">Fazer pedido</a>
       </div>
-      <div class="hero-sub"><span>Encomendas</span><span>Pronta entrega</span><span>Entrega de moto</span></div>
     </div>
     <div class="vitrine">
-      <div class="arco">
-        <img class="slide on" src="assets/capa-unicornio.jpg" alt="Bolo tema unicórnio com chifre dourado e flores de chantilly coloridas" fetchpriority="high">
-        <img class="slide" src="assets/capa-casamento.jpg" alt="Bolo de casamento de dois andares, branco, com topo dourado dos noivos" loading="lazy">
-        <img class="slide" src="assets/capa-patrulha.jpg" alt="Bolo tema Patrulha Canina em azul, amarelo e vermelho" loading="lazy">
-        <img class="slide" src="assets/capa-kit.jpg" alt="Mesa com bolo tema bombeiro, brigadeiros e cupcakes" loading="lazy">
-      </div>
-      <div class="prato" aria-hidden="true"></div>
-      <div class="etq" aria-live="polite"><small id="etqK">Infantil</small><b id="etqT">Tema unicórnio</b></div>
-      <div class="pontos" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+      <img class="slide on" src="assets/capa-unicornio.jpg" alt="Bolo tema unicórnio com chifre dourado e flores de chantilly coloridas" fetchpriority="high">
+      <img class="slide" src="assets/capa-patrulha.jpg" alt="Bolo tema Patrulha Canina" loading="lazy">
+      <img class="slide" src="assets/capa-casamento.jpg" alt="Bolo de casamento de dois andares com topo dourado" loading="lazy">
+      <img class="slide" src="assets/capa-kit.jpg" alt="Bolo tema bombeiro com brigadeiros e cupcakes" loading="lazy">
+      <div class="etq" aria-live="polite"><small id="etqK">Infantil</small><span id="etqT">Tema unicórnio</span></div>
     </div>
-    <div class="rola" aria-hidden="true">Role</div>
   </div>
 </section>
 
-<div class="temas" aria-label="Alguns temas que ela já fez">
-  <div class="trilho" aria-hidden="true">
-    <span>Unicórnio</span><span>Patrulha Canina</span><span>Sonic</span><span>Pikachu</span><span>Flork</span><span>Barbie</span><span>Branca de Neve</span><span>Mickey e Minnie</span><span>Galinha Pintadinha</span><span>Pocoyo</span><span>Sereia</span><span>Carros</span><span>Safari</span><span>Casamento</span><span>Nossa Senhora</span><span>Futebol</span>
-    <span>Unicórnio</span><span>Patrulha Canina</span><span>Sonic</span><span>Pikachu</span><span>Flork</span><span>Barbie</span><span>Branca de Neve</span><span>Mickey e Minnie</span><span>Galinha Pintadinha</span><span>Pocoyo</span><span>Sereia</span><span>Carros</span><span>Safari</span><span>Casamento</span><span>Nossa Senhora</span><span>Futebol</span>
-  </div>
+<div class="vant">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 17l.9-5.4L4.2 7.7l5.4-.8z"/></svg><div><b>Qualquer tema</b><span>Desenho, time, frase, casamento</span></div></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 14a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm14 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM14 5h3l3 5v3.5h-1a4 4 0 0 0-7 0H9a4 4 0 0 0-7 0V8h12z"/></svg><div><b>Entrega de moto</b><span>Em Teresina, ou retire</span></div></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4l3.5 2-1 1.7L11 13V6h2z"/></svg><div><b>Pronta entrega</b><span>Pra quando a festa é hoje</span></div></li>
+    <li><svg aria-hidden="true"><use href="#zapico"/></svg><div><b>Pedido pelo WhatsApp</b><span>Monte aqui e envie pronto</span></div></li>
+  </ul>
 </div>
 
-<section class="galeria" id="bolos" aria-labelledby="gal-h">
+<section class="sec" id="cardapio" aria-labelledby="card-h">
   <div class="wrap">
-    <div class="gal-top">
-      <div>
-        <span class="kick">Bolos que já saíram daqui</span>
-        <h2 id="gal-h">Do desenho preferido<br>ao <em>time do coração.</em></h2>
+    <div class="sec-top">
+      <div><span class="kick">Cardápio</span><h2 id="card-h">O que você <em>quer pedir?</em></h2></div>
+      <p>Toque no <b style="color:var(--verde)">+</b> pra colocar na sacola. No fim, o pedido vai pronto pro WhatsApp da Valéria.</p>
+    </div>
+
+    <div class="grupo" id="bolos">
+      <h3>Bolos</h3>
+      <div class="prods">
+        <article class="prod destaque rev"><span class="tag">Mais pedido</span><div><h4>Bolo personalizado</h4><p>Com o tema da festa, nome e idade no topo.</p><select aria-label="Tamanho do bolo personalizado" data-aro><option>Aro 10</option><option selected>Aro 15</option><option>Aro 20</option><option>Aro 25</option></select><span class="serve" data-serve>Serve em média 15 a 20 fatias</span><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/capa-unicornio.jpg" alt="Bolo personalizado tema unicórnio" loading="lazy"><button class="add" data-item="Bolo personalizado" aria-label="Colocar bolo personalizado na sacola">+</button></div></article>
+        <article class="prod rev"><div><h4>Bolo de casamento</h4><p>De andar, branco, com topo dos noivos.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/capa-casamento.jpg" alt="Bolo de casamento de dois andares" loading="lazy"><button class="add" data-item="Bolo de casamento" aria-label="Colocar bolo de casamento na sacola">+</button></div></article>
+        <article class="prod rev"><div><h4>Bento cake</h4><p>Pequeno e alto, com desenho ou frase. Bom pra presente.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/bento.jpg" alt="Bento cake branco com desenho" loading="lazy"><button class="add" data-item="Bento cake" aria-label="Colocar bento cake na sacola">+</button></div></article>
       </div>
+    </div>
+
+    <div class="grupo" id="kits">
+      <h3>Kit festa</h3>
+      <div class="prods">
+        <article class="prod rev"><div><h4>Kit festa P</h4><p>Bolo, docinhos e cupcakes combinando com o tema.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/kit-jaqueline.jpg" alt="Kit festa com bolo, cupcakes e brigadeiros" loading="lazy"><button class="add" data-item="Kit festa P" aria-label="Colocar kit festa P na sacola">+</button></div></article>
+        <article class="prod rev"><div><h4>Kit festa M</h4><p>O kit pra festa com mais convidados.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/kit-68.jpg" alt="Kit festa M com bolo, cupcakes e beijinhos" loading="lazy"><button class="add" data-item="Kit festa M" aria-label="Colocar kit festa M na sacola">+</button></div></article>
+        <article class="prod rev"><div><h4>Docinhos e cupcakes</h4><p>Brigadeiros, beijinhos e cupcakes na cor da festa.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/kit-vovo.jpg" alt="Cupcakes e brigadeiros ao lado de um bolo" loading="lazy"><button class="add" data-item="Docinhos e cupcakes" aria-label="Colocar docinhos e cupcakes na sacola">+</button></div></article>
+      </div>
+    </div>
+
+    <div class="grupo" id="mimos">
+      <h3>Caixinhas e mimos</h3>
+      <div class="prods">
+        <article class="prod rev"><div><h4>Caixinha de brigadeiros</h4><p>6 brigadeiros com letras de chocolate, como "TE AMO".</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/caixa-te-amo.jpg" alt="Caixinha de brigadeiros com letras TE AMO" loading="lazy"><button class="add" data-item="Caixinha de brigadeiros" aria-label="Colocar caixinha de brigadeiros na sacola">+</button></div></article>
+        <article class="prod rev"><div><h4>Caixinha comemorativa</h4><p>Com número ou palavra em chocolate dourado.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/caixa-8-anos.jpg" alt="Caixinha de doces com letras 8 ANOS" loading="lazy"><button class="add" data-item="Caixinha comemorativa" aria-label="Colocar caixinha comemorativa na sacola">+</button></div></article>
+      </div>
+    </div>
+
+    <div class="grupo" id="hoje">
+      <h3>Pra hoje ou amanhã</h3>
+      <div class="prods">
+        <article class="prod rev"><div><h4>Bolo vulcão</h4><p>Chocolate com calda por cima e brigadeiros. Ótimo pra última hora.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/vulcao.jpg" alt="Bolo vulcão com calda e brigadeiros" loading="lazy"><button class="add" data-item="Bolo vulcão" aria-label="Colocar bolo vulcão na sacola">+</button></div></article>
+        <article class="prod rev"><div><h4>Mini vulcão red velvet</h4><p>Massa red velvet com recheio de ninho.</p><span class="preco">Valor pelo WhatsApp</span></div><div class="foto"><img src="assets/mini-vulcao.jpg" alt="Mini bolo vulcão red velvet" loading="lazy"><button class="add" data-item="Mini vulcão red velvet" aria-label="Colocar mini vulcão na sacola">+</button></div></article>
+        <article class="prod pronta rev"><div><h4>Pronta entrega</h4><p>Tem coisa pronta hoje? Pergunte e veja o que está disponível agora.</p></div><a class="btn" href="https://wa.me/5586995849283?text=Oi%2C%20Val%C3%A9ria!%20Vi%20o%20site.%20O%20que%20tem%20de%20pronta%20entrega%20hoje%3F" target="_blank" rel="noopener">Ver o que tem hoje</a></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec galeria" id="galeria" aria-labelledby="gal-h">
+  <div class="wrap">
+    <div class="sec-top">
+      <div><span class="kick">Temas que já fiz</span><h2 id="gal-h">Do desenho preferido ao <em>time do coração.</em></h2></div>
       <div class="filtros" role="group" aria-label="Filtrar bolos">
         <button aria-pressed="true" data-f="todos">Todos</button>
         <button aria-pressed="false" data-f="infantil">Infantil</button>
@@ -402,154 +385,96 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
       </div>
     </div>
     <div class="grade" id="grade">
-      <figure class="card rev" data-c="infantil"><img src="assets/pikachu.jpg" alt="Bolo amarelo do Pikachu com orelhas e rostinho" loading="lazy"><figcaption><small>Infantil</small>Pikachu</figcaption></figure>
-      <figure class="card rev" data-c="delicado"><img src="assets/rose.jpg" alt="Bolo branco com pinceladas rosa e placa com o nome Rose" loading="lazy"><figcaption><small>Delicado</small>Branco e rosa</figcaption></figure>
-      <figure class="card rev" data-c="divertido"><img src="assets/flork-frases.jpg" alt="Bolo branco tema Flork com frases divertidas no topo" loading="lazy"><figcaption><small>Divertido · aro 15</small>Flork com frases</figcaption></figure>
-      <figure class="card rev" data-c="time"><img src="assets/flamengo.jpg" alt="Bolo preto e vermelho com escudo do Flamengo" loading="lazy"><figcaption><small>Time</small>Flamengo</figcaption></figure>
-      <figure class="card rev" data-c="delicado"><img src="assets/aparecida.jpg" alt="Bolo azul e branco com topo de Nossa Senhora Aparecida" loading="lazy"><figcaption><small>Fé · aro 10</small>Aparecida</figcaption></figure>
-      <figure class="card rev" data-c="infantil"><img src="assets/sonic.jpg" alt="Bolo azul do Sonic com cupcakes azuis" loading="lazy"><figcaption><small>Infantil · aro 20</small>Sonic</figcaption></figure>
-      <figure class="card rev" data-c="delicado"><img src="assets/virtuosa.jpg" alt="Bolo rosa claro tema mulher virtuosa com flores" loading="lazy"><figcaption><small>Delicado · aro 20</small>Mulher virtuosa</figcaption></figure>
-      <figure class="card rev" data-c="divertido"><img src="assets/minha-mae.jpg" alt="Bolo tema Minha mãe é uma peça" loading="lazy"><figcaption><small>Divertido · aro 15</small>Minha mãe é uma peça</figcaption></figure>
-      <figure class="card rev" data-c="time"><img src="assets/corinthians.jpg" alt="Bolo preto, branco e dourado do Corinthians" loading="lazy"><figcaption><small>Time · aro 15</small>Corinthians</figcaption></figure>
-      <figure class="card rev" data-c="delicado"><img src="assets/cha-aurora.jpg" alt="Bolo claro de chá de bebê com ursinhos e nuvens" loading="lazy"><figcaption><small>Chá de bebê</small>Chá da Aurora</figcaption></figure>
-      <figure class="card rev" data-c="infantil"><img src="assets/safari.jpg" alt="Bolo tronco de árvore tema safari para chá de fralda" loading="lazy"><figcaption><small>Infantil</small>Chá de fralda safari</figcaption></figure>
-      <figure class="card rev" data-c="infantil"><img src="assets/carros.jpg" alt="Bolo azul tema Carros com Relâmpago McQueen" loading="lazy"><figcaption><small>Infantil</small>Carros</figcaption></figure>
+      <figure class="card" data-c="infantil"><img src="assets/pikachu.jpg" alt="Bolo do Pikachu" loading="lazy"><figcaption><small>Infantil</small>Pikachu</figcaption></figure>
+      <figure class="card" data-c="delicado"><img src="assets/rose.jpg" alt="Bolo branco com pinceladas rosa" loading="lazy"><figcaption><small>Delicado</small>Branco e rosa</figcaption></figure>
+      <figure class="card" data-c="divertido"><img src="assets/flork-frases.jpg" alt="Bolo tema Flork com frases" loading="lazy"><figcaption><small>Divertido · aro 15</small>Flork com frases</figcaption></figure>
+      <figure class="card" data-c="time"><img src="assets/flamengo.jpg" alt="Bolo do Flamengo" loading="lazy"><figcaption><small>Time</small>Flamengo</figcaption></figure>
+      <figure class="card" data-c="infantil"><img src="assets/sonic.jpg" alt="Bolo do Sonic com cupcakes" loading="lazy"><figcaption><small>Infantil · aro 20</small>Sonic</figcaption></figure>
+      <figure class="card" data-c="delicado"><img src="assets/aparecida.jpg" alt="Bolo com topo de Nossa Senhora Aparecida" loading="lazy"><figcaption><small>Fé · aro 10</small>Aparecida</figcaption></figure>
+      <figure class="card" data-c="divertido"><img src="assets/minha-mae.jpg" alt="Bolo tema Minha mãe é uma peça" loading="lazy"><figcaption><small>Divertido · aro 15</small>Minha mãe é uma peça</figcaption></figure>
+      <figure class="card" data-c="delicado"><img src="assets/virtuosa.jpg" alt="Bolo rosa tema mulher virtuosa" loading="lazy"><figcaption><small>Delicado · aro 20</small>Mulher virtuosa</figcaption></figure>
+      <figure class="card" data-c="infantil"><img src="assets/safari.jpg" alt="Bolo tema safari para chá de fralda" loading="lazy"><figcaption><small>Infantil</small>Chá de fralda safari</figcaption></figure>
+      <figure class="card" data-c="time"><img src="assets/corinthians.jpg" alt="Bolo do Corinthians" loading="lazy"><figcaption><small>Time · aro 15</small>Corinthians</figcaption></figure>
+      <figure class="card" data-c="delicado"><img src="assets/cha-aurora.jpg" alt="Bolo de chá de bebê com ursinhos" loading="lazy"><figcaption><small>Chá de bebê</small>Chá da Aurora</figcaption></figure>
+      <figure class="card" data-c="infantil"><img src="assets/carros.jpg" alt="Bolo tema Carros" loading="lazy"><figcaption><small>Infantil</small>Carros</figcaption></figure>
     </div>
-    <div class="gal-pe"><span>Seu tema não está aqui? Ela faz.</span><a href="https://www.instagram.com/deliciasdavallr/" target="_blank" rel="noopener">Ver mais no Instagram</a></div>
+    <p class="gal-pe">Seu tema não está aqui? Ela faz. <a href="https://www.instagram.com/deliciasdavallr/" target="_blank" rel="noopener">Ver mais no Instagram</a></p>
   </div>
 </section>
 
-<section class="tamanhos" id="tamanhos" aria-labelledby="tam-h">
-  <div class="wrap tam-in">
-    <div>
-      <span class="kick">Qual tamanho pedir?</span>
-      <h2 id="tam-h">Toque no aro e veja<br>o <em>tamanho do bolo.</em></h2>
-      <p class="lede">O aro é a largura do bolo, em centímetros. Escolha pelo número de convidados.</p>
-      <div class="aros" role="group" aria-label="Tamanhos">
-        <button aria-pressed="false" data-aro="10"><small>aro</small><span>10</span></button>
-        <button aria-pressed="true" data-aro="15"><small>aro</small><span>15</span></button>
-        <button aria-pressed="false" data-aro="20"><small>aro</small><span>20</span></button>
-        <button aria-pressed="false" data-aro="25"><small>aro</small><span>25</span></button>
-      </div>
-      <div class="tam-info" aria-live="polite">
-        <b id="tamT">Aro 15, o queridinho</b>
-        <span class="serve" id="tamS">Serve em média 15 a 20 fatias</span>
-        <p id="tamP">Aniversário em família, com os mais chegados. Na foto: tema pintor, aro 15.</p>
-        <p class="nota">Fatias aproximadas. A altura do bolo muda a conta, a Valéria confirma no pedido.</p>
-      </div>
-      <a class="btn btn-pri" href="#pedido" id="tamBtn">Quero o aro 15</a>
-    </div>
-    <div class="mesa" aria-hidden="true">
-      <div class="bolo-c" id="boloC" style="--d:.66">
-        <img src="assets/aro-10.jpg" alt="" data-aro="10" loading="lazy">
-        <img class="on" src="assets/aro-15.jpg" alt="" data-aro="15" loading="lazy">
-        <img src="assets/aro-20.jpg" alt="" data-aro="20" loading="lazy">
-        <img src="assets/aro-25.jpg" alt="" data-aro="25" loading="lazy">
-      </div>
-   </div>
-  </div>
-</section>
-
-<section class="kits" id="kits" aria-labelledby="kit-h">
-  <svg class="div-calda" data-calda="canvas2" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"></svg>
-  <div class="wrap kits-in">
-    <div class="rev">
-      <span class="kick">Kits festa</span>
-      <h2 id="kit-h">A festa inteira<br>num <em>pedido só.</em></h2>
-      <p class="lede">Bolo, docinhos e cupcakes combinando com o tema. Você não precisa correr atrás de três lugares diferentes.</p>
-      <ul class="lista">
-        <li>Kit festa P e kit festa M</li>
-        <li>Brigadeiros, beijinhos e cupcakes na cor do tema</li>
-        <li>O que vem em cada kit a Valéria te passa no WhatsApp</li>
-      </ul>
-      <a class="btn btn-sec" href="#pedido" data-pre="Kit festa">Quero um kit festa</a>
-    </div>
-    <div class="kit-fotos rev">
-      <figure><img src="assets/kit-jaqueline.jpg" alt="Bolo branco e amarelo com flores, cupcakes e brigadeiros" loading="lazy"><figcaption>Kit festa P</figcaption></figure>
-      <figure><img src="assets/kit-68.jpg" alt="Bolo de 68 anos com cupcakes e beijinhos rosa" loading="lazy"><figcaption>Kit festa M</figcaption></figure>
-      <figure><img src="assets/kit-vovo.jpg" alt="Bolo com flores e borboletas, cupcakes e brigadeiros" loading="lazy"><figcaption>Bolo + docinhos</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="mimos" id="mimos" aria-labelledby="mim-h">
+<section class="sec" id="tamanhos" aria-labelledby="tam-h">
   <div class="wrap">
-    <div class="mimos-top rev">
-      <span class="kick">Mimos e última hora</span>
-      <h2 id="mim-h">Pra dizer <em>te amo</em><br>sem precisar de festa.</h2>
-      <p class="lede">Caixinhas de brigadeiro com letras de chocolate, bento cake e o bolo vulcão, que salva quando o aniversário é amanhã.</p>
-    </div>
-    <div class="bento">
-      <div class="m m1 rev"><img src="assets/caixa-te-amo.jpg" alt="Caixinha com brigadeiros e letras de chocolate dourado formando TE AMO" loading="lazy"><div class="t"><b>Caixinha de brigadeiros</b><span>6 brigadeiros com letras de chocolate</span></div></div>
-      <div class="m m2 rev"><img src="assets/vulcao.jpg" alt="Bolo vulcão de chocolate com calda branca e brigadeiros" loading="lazy" style="object-position:50% 60%"><div class="t"><b>Bolo vulcão</b><span>Ótima opção pra última hora</span></div></div>
-      <div class="m m3 rev"><img src="assets/bento.jpg" alt="Bento cake branco com desenho Flork" loading="lazy" style="object-position:50% 45%"><div class="t"><b>Bento cake</b><span>Pequeno, alto, cheio de charme</span></div></div>
-      <div class="m m4 rev"><img src="assets/caixa-8-anos.jpg" alt="Caixinha de doces com letras douradas 8 ANOS e coração" loading="lazy"><div class="t"><b>Datas especiais</b><span>Pro seu amor</span></div></div>
-      <div class="m m5 rev"><img src="assets/mini-vulcao.jpg" alt="Mini bolo vulcão red velvet com calda de ninho" loading="lazy" style="object-position:50% 60%"><div class="t"><b>Mini vulcão</b><span>Red velvet com ninho</span></div></div>
-      <div class="m m6 rev"><b>Precisa pra hoje?</b><span>Tem pronta entrega. Pergunte o que tem disponível agora.</span><a href="https://wa.me/5586995849283?text=Oi%2C%20Val%C3%A9ria!%20Vi%20o%20site.%20O%20que%20tem%20de%20pronta%20entrega%20hoje%3F" target="_blank" rel="noopener">Ver pronta entrega</a></div>
+    <div class="tam-in rev">
+      <div>
+        <span class="kick">Qual tamanho pedir?</span>
+        <h2 id="tam-h">Toque no aro e veja o <em>tamanho.</em></h2>
+        <p>O aro é a largura do bolo, em centímetros. Escolha pelo número de convidados.</p>
+        <div class="aros" role="group" aria-label="Tamanhos">
+          <button aria-pressed="false" data-aro="10"><small>aro</small><span>10</span></button>
+          <button aria-pressed="true" data-aro="15"><small>aro</small><span>15</span></button>
+          <button aria-pressed="false" data-aro="20"><small>aro</small><span>20</span></button>
+          <button aria-pressed="false" data-aro="25"><small>aro</small><span>25</span></button>
+        </div>
+        <div class="tam-info" aria-live="polite">
+          <b id="tamT">Aro 15, o queridinho</b>
+          <span class="serve" id="tamS">Serve em média 15 a 20 fatias</span>
+          <p id="tamP">Aniversário em família, com os mais chegados. Na foto: tema pintor, aro 15.</p>
+          <p class="nota">Fatias aproximadas. A altura do bolo muda a conta, a Valéria confirma no pedido.</p>
+        </div>
+        <button class="btn btn-pri" id="tamBtn">Colocar aro 15 na sacola</button>
+      </div>
+      <div class="mesa" aria-hidden="true">
+        <div class="bolo-c" id="boloC">
+          <img src="assets/aro-10.jpg" alt="" data-aro="10" loading="lazy">
+          <img class="on" src="assets/aro-15.jpg" alt="" data-aro="15" loading="lazy">
+          <img src="assets/aro-20.jpg" alt="" data-aro="20" loading="lazy">
+          <img src="assets/aro-25.jpg" alt="" data-aro="25" loading="lazy">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="quem" id="quem" aria-labelledby="quem-h">
+<section class="sec quem" id="quem" aria-labelledby="quem-h">
   <div class="wrap quem-in">
     <div class="quem-foto rev"><img src="assets/logo.jpg" alt="Logo da Delícias da Vallr" loading="lazy"></div>
     <div class="rev">
       <span class="kick">Quem faz</span>
-      <h2 id="quem-h">Oi, eu sou<br>a <em>Valéria.</em></h2>
-      <p class="lede">Cada bolo daqui sai das minhas mãos, em Teresina. Do mini de 10 cm ao meu primeiro bolo de casamento de andar, o topo é montado pra quem vai soprar a vela.</p>
-      <p class="lede">Meu lema é "sempre inovando": chegou tema novo, eu faço.</p>
-      <ul class="selos"><li>Teresina · Mafrense</li><li>Encomendas e pronta entrega</li><li>Entrega de moto</li></ul>
+      <h2 id="quem-h">Oi, eu sou a <em>Valéria.</em></h2>
+      <p style="margin-top:16px">Cada bolo daqui sai das minhas mãos, em Teresina. Do mini de 10 cm ao meu primeiro bolo de casamento de andar, o topo é montado pra quem vai soprar a vela.</p>
+      <p>Meu lema é "sempre inovando": chegou tema novo, eu faço.</p>
+      <ul class="selos"><li>Teresina · Mafrense</li><li>Loja virtual</li><li>Entrega de moto</li></ul>
       <a class="insta" href="https://www.instagram.com/deliciasdavallr/" target="_blank" rel="noopener">Acompanhe no Instagram @deliciasdavallr</a>
     </div>
   </div>
 </section>
 
-<section class="pedido" id="pedido" aria-labelledby="ped-h">
+<section class="sec pedido" id="pedido" aria-labelledby="ped-h">
   <div class="wrap ped-in">
     <div class="rev">
-      <span class="kick">Como pedir</span>
-      <h2 id="ped-h">Seu pedido chega<br><em>prontinho</em> no WhatsApp.</h2>
-      <p class="lede">Responda em um minuto e a Valéria já recebe tudo o que precisa pra te passar o valor. Sem aquele vai e volta de mensagem.</p>
+      <span class="kick">Fazer pedido</span>
+      <h2 id="ped-h">Seu pedido chega <em>prontinho</em> no WhatsApp.</h2>
+      <p>Em um minuto a Valéria recebe tudo o que precisa pra te passar o valor. Sem vai e volta de mensagem.</p>
       <ol class="passos">
-        <li><div><b>Monte o pedido aqui</b><span>Bolo, tamanho, tema, nome no topo e a data.</span></div></li>
-        <li><div><b>A Valéria te responde com o valor</b><span>E tira as dúvidas de sabor e decoração.</span></div></li>
-        <li><div><b>Na data, entrega ou retirada</b><span>Entrega de moto em Teresina, ou você vem buscar.</span></div></li>
+        <li><div><b>Escolha no cardápio</b><span>Ou direto aqui na sacola.</span></div></li>
+        <li><div><b>Conte o tema e a data</b><span>Nome no topo, idade, cores, entrega ou retirada.</span></div></li>
+        <li><div><b>A Valéria responde com o valor</b><span>E combina sabor, pagamento e entrega com você.</span></div></li>
       </ol>
     </div>
 
     <form class="ficha" id="ficha" novalidate>
-      <div class="barra" aria-hidden="true"><i class="ok"></i><i></i><i></i><i></i><i></i></div>
+      <div class="barra" aria-hidden="true"><i class="ok"></i><i></i><i></i><i></i></div>
 
-      <fieldset class="etapa on" data-e="0">
-        <legend><h3>O que você quer?</h3></legend>
-        <p>Escolha uma opção.</p>
-        <div class="opcoes">
-          <label><input type="radio" name="tipo" value="Bolo personalizado" checked>Bolo personalizado<small>Com o tema da festa</small></label>
-          <label><input type="radio" name="tipo" value="Kit festa">Kit festa<small>Bolo + docinhos + cupcakes</small></label>
-          <label><input type="radio" name="tipo" value="Bolo de casamento">Bolo de casamento<small>De andar</small></label>
-          <label><input type="radio" name="tipo" value="Bento cake">Bento cake<small>Pequenininho</small></label>
-          <label><input type="radio" name="tipo" value="Bolo vulcão">Bolo vulcão<small>Pra última hora</small></label>
-          <label><input type="radio" name="tipo" value="Caixinha de brigadeiros">Caixinha de brigadeiros<small>Com letras de chocolate</small></label>
-          <label><input type="radio" name="tipo" value="Docinhos e cupcakes">Docinhos e cupcakes<small>Sem bolo</small></label>
-          <label><input type="radio" name="tipo" value="Pronta entrega">Pronta entrega<small>O que tiver hoje</small></label>
-        </div>
+      <fieldset class="etapa on">
+        <legend><h3>Sua sacola</h3></legend>
+        <p>Confira os itens ou adicione aqui embaixo.</p>
+        <ul class="lista-sac" id="listaSac"></ul>
+        <p class="vazia" id="vazia">Sua sacola está vazia. Escolha no cardápio ou adicione abaixo.</p>
+        <label class="rap-tam">Tamanho do bolo: <select id="rapAro"><option>Aro 10</option><option selected>Aro 15</option><option>Aro 20</option><option>Aro 25</option></select></label>
+        <div class="rapido" id="rapido"></div>
       </fieldset>
 
-      <fieldset class="etapa" data-e="1">
-        <legend><h3>Qual tamanho?</h3></legend>
-        <p>Se for kit, escolha o tamanho do kit.</p>
-        <div class="opcoes" id="opTam">
-          <label><input type="radio" name="tam" value="Aro 10">Aro 10<small>Mini, em média 8 a 10 fatias</small></label>
-          <label><input type="radio" name="tam" value="Aro 15" checked>Aro 15<small>Em média 15 a 20 fatias</small></label>
-          <label><input type="radio" name="tam" value="Aro 20">Aro 20<small>Em média 25 a 30 fatias</small></label>
-          <label><input type="radio" name="tam" value="Aro 25">Aro 25<small>Em média 40 a 50 fatias</small></label>
-          <label><input type="radio" name="tam" value="Kit P">Kit festa P<small>Festa menor</small></label>
-          <label><input type="radio" name="tam" value="Kit M">Kit festa M<small>Mais convidados</small></label>
-          <label><input type="radio" name="tam" value="Não sei, me ajuda a escolher">Não sei ainda<small>Ela te ajuda</small></label>
-        </div>
-      </fieldset>
-
-      <fieldset class="etapa" data-e="2">
+      <fieldset class="etapa">
         <legend><h3>Tema e topo</h3></legend>
         <p>Tudo opcional. Quanto mais detalhe, mais certeiro o orçamento.</p>
         <label class="campo"><span>Tema</span><input name="tema" placeholder="Ex.: Patrulha Canina, Flork, Flamengo" autocomplete="off"></label>
@@ -561,7 +486,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <label class="campo"><span>Cores ou detalhes</span><textarea name="obs" placeholder="Ex.: rosa e dourado, com borboletas"></textarea></label>
       </fieldset>
 
-      <fieldset class="etapa" data-e="3">
+      <fieldset class="etapa">
         <legend><h3>Data e entrega</h3></legend>
         <p>Pra saber se a data está livre.</p>
         <label class="campo"><span>Data da festa</span><input type="date" name="data"></label>
@@ -569,10 +494,10 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
           <label><input type="radio" name="ent" value="Entrega de moto" checked>Entrega de moto<small>Em Teresina</small></label>
           <label><input type="radio" name="ent" value="Vou buscar">Vou buscar<small>Retirada combinada</small></label>
         </div>
-        <label class="campo" style="margin-top:14px"><span>Bairro</span><input name="bairro" placeholder="Ex.: Mafrense" autocomplete="address-level3"></label>
+        <label class="campo"><span>Bairro</span><input name="bairro" placeholder="Ex.: Mafrense" autocomplete="address-level3"></label>
       </fieldset>
 
-      <fieldset class="etapa" data-e="4">
+      <fieldset class="etapa">
         <legend><h3>Quase lá</h3></legend>
         <p>Confira e envie. Abre o WhatsApp da Valéria com tudo escrito.</p>
         <label class="campo"><span>Seu nome</span><input name="nome" placeholder="Como você se chama?" autocomplete="name"></label>
@@ -580,6 +505,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <p class="aviso">Nada fica salvo em servidor. Seu nome fica só no seu celular, pra próxima vez.</p>
       </fieldset>
 
+      <p class="erro" id="erro" aria-live="polite"></p>
       <div class="nav-ficha">
         <button type="button" class="voltar" id="voltar" hidden>← Voltar</button>
         <button type="button" class="btn btn-pri" id="seguir">Continuar</button>
@@ -589,218 +515,203 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
   </div>
 </section>
 
-<section class="faq" id="perguntas" aria-labelledby="faq-h">
+<section class="sec" id="perguntas" aria-labelledby="faq-h">
   <div class="wrap faq-in">
-    <div class="rev">
-      <span class="kick">Dúvidas</span>
-      <h2 id="faq-h">Antes de <em>pedir.</em></h2>
-    </div>
-    <div class="rev">
+    <div><span class="kick">Dúvidas</span><h2 id="faq-h">Antes de <em>pedir.</em></h2></div>
+    <div>
       <details><summary>Ela faz qualquer tema?</summary><p>Faz. Desenho, time, frase engraçada, tema religioso, casamento. Mande o tema ou uma foto de referência e ela adapta pro tamanho que você escolher.</p></details>
       <details><summary>Dá pra colocar nome e idade no bolo?</summary><p>Dá. O topo vai com o nome e a idade de quem faz aniversário, como nas fotos aqui do site.</p></details>
       <details><summary>Com quanto tempo de antecedência eu peço?</summary><p>Quanto antes, mais garantida fica a sua data. Pra hoje ou amanhã, pergunte da pronta entrega e do bolo vulcão.</p></details>
       <details><summary>Vocês entregam?</summary><p>Sim, entrega de moto em Teresina. O valor da entrega depende do bairro e é combinado no WhatsApp. Se preferir, você retira.</p></details>
-      <details><summary>Tem loja física?</summary><p>Não. É loja virtual: o pedido é feito pelo WhatsApp ou por aqui, e o bolo vai até você.</p></details>
       <details><summary>Quais sabores tem?</summary><p>Massa de chocolate com recheio de chocolate e massa red velvet com recheio de ninho são as queridinhas. O cardápio completo vem junto com o orçamento.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="final" aria-labelledby="fim-h">
-  <svg class="div-calda" data-calda="canvas" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"></svg>
-  <div class="wrap">
-    <h2 id="fim-h">Qual é a <em>próxima festa?</em></h2>
-    <p>Conte o tema e a data. A Valéria responde com o valor e as opções de sabor.</p>
-    <div class="acoes">
-      <a class="btn btn-pri" href="#pedido">Montar meu pedido</a>
-      <a class="btn btn-sec" href="https://wa.me/5586995849283?text=Oi%2C%20Val%C3%A9ria!%20Vi%20seu%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <details><summary>Tem loja física?</summary><p>Não. É loja virtual: o pedido é feito pelo WhatsApp ou por aqui, e o bolo vai até você.</p></details>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap foot">
-    <a class="logo" href="#topo"><img src="assets/logo.jpg" alt="" width="46" height="46" loading="lazy"><small>Delícias da</small><b>Vallr</b></a>
-    <span>Teresina, PI · Mafrense · Loja virtual, pedidos pelo WhatsApp · <a href="https://www.instagram.com/deliciasdavallr/" target="_blank" rel="noopener">@deliciasdavallr</a></span>
-    <span>Prévia feita pelo Ateliê de Sites.</span>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#topo"><img src="assets/logo.jpg" alt="" width="52" height="52" loading="lazy"><div><b>Delícias da Vallr</b><small>Felicidade em forma de chocolate</small></div></a>
+        <p style="margin-top:14px">Bolos personalizados, kits festa e doces. Loja virtual em Teresina, PI.</p>
+      </div>
+      <div><h5>Pedidos</h5><p><a href="https://wa.me/5586995849283" target="_blank" rel="noopener">WhatsApp (86) 99584-9283</a></p><p>Entrega de moto em Teresina</p></div>
+      <div><h5>Siga</h5><p><a href="https://www.instagram.com/deliciasdavallr/" target="_blank" rel="noopener">Instagram @deliciasdavallr</a></p><p>Mafrense, Teresina</p></div>
+    </div>
+    <p class="credito">Prévia feita pelo Ateliê de Sites.</p>
   </div>
 </footer>
 
-<a class="zap" id="zap" href="https://wa.me/5586995849283?text=Oi%2C%20Val%C3%A9ria!%20Vi%20seu%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<div class="barra-sac" id="barraSac" role="status"><div><b id="barraT">1 item na sacola</b><span>Falta só o tema e a data</span></div><a class="btn" href="#pedido">Finalizar pedido</a></div>
+<a class="zap" id="zap" href="https://wa.me/5586995849283?text=Oi%2C%20Val%C3%A9ria!%20Vi%20seu%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg aria-hidden="true"><use href="#zapico"/></svg></a>
 
 <script>
 (() => {
   const ZAP = '5586995849283';
   const reduz = matchMedia('(prefers-reduced-motion: reduce)');
 
-  // ---------- calda de chocolate (gerada com semente fixa, igual em todo carregamento)
+  // calda de chocolate pendurada na barra rosa (semente fixa)
   function rng(seed){ let s = seed >>> 0; return () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296; }
-  const NS = 'http://www.w3.org/2000/svg';
-  function calda(svg, cor, seed, H, base, gotas, compr){
-    const r = rng(seed), W = 1440;
+  (function calda(svg){
+    const r = rng(7), W = 1440, base = 14, NS = 'http://www.w3.org/2000/svg';
     let d = `M0 0H${W}V${base}`;
-    for (let x = W; x > 0; x -= 48) d += `Q${x - 24} ${base + 8 + r() * 6} ${x - 48} ${base}`;
-    d += 'Z';
-    const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('fill', cor); svg.appendChild(p);
-    const lista = [];
-    for (let i = 0; i < gotas; i++) {
-      const x = (i + .15 + r() * .7) * W / gotas, w = 12 + r() * 16, len = compr * (.35 + r() * .65);
+    for (let x = W; x > 0; x -= 48) d += `Q${x - 24} ${base + 6 + r() * 5} ${x - 48} ${base}`;
+    const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d + 'Z'); p.setAttribute('fill', '#3B2320'); svg.appendChild(p);
+    for (let i = 0; i < 26; i++) {
+      const x = (i + .15 + r() * .7) * W / 26, w = 10 + r() * 14, len = 14 + r() * 40;
       const g = document.createElementNS(NS, 'rect');
-      g.setAttribute('x', x - w / 2); g.setAttribute('y', base - 6); g.setAttribute('width', w); g.setAttribute('height', len); g.setAttribute('rx', w / 2);
-      g.setAttribute('fill', cor); g.setAttribute('class', 'gota'); svg.appendChild(g); lista.push(g);
+      g.setAttribute('x', x - w / 2); g.setAttribute('y', base - 6); g.setAttribute('width', w); g.setAttribute('height', len); g.setAttribute('rx', w / 2); g.setAttribute('fill', '#3B2320');
+      svg.appendChild(g);
     }
-    return lista;
-  }
-  const css = getComputedStyle(document.documentElement);
-  const cor = n => css.getPropertyValue('--' + n).trim();
-  const gotasTopo = calda(document.getElementById('caldaTopo'), cor('choco'), 7, 120, 22, 22, 90);
-  document.querySelectorAll('svg[data-calda]').forEach((s, i) => calda(s, cor(s.dataset.calda), 31 + i * 11, 70, 16, 26, 48));
+  })(document.getElementById('caldaTopo'));
 
-  // ---------- capa
-  const hero = document.querySelector('.hero');
+  // capa: fotos trocando sozinhas
   const slides = [...document.querySelectorAll('.slide')];
-  const pontos = [...document.querySelectorAll('.pontos i')];
-  const etqK = document.getElementById('etqK'), etqT = document.getElementById('etqT');
-  const ROT = [['Infantil','Tema unicórnio'],['Casamento','Primeiro bolo de andar'],['Infantil · aro 20','Patrulha Canina'],['Festa completa','Bolo, brigadeiros e cupcakes']];
+  const ROT = [['Infantil','Tema unicórnio'],['Infantil · aro 20','Patrulha Canina'],['Casamento','Primeiro bolo de andar'],['Festa completa','Bolo, brigadeiros e cupcakes']];
   let atual = 0;
-  function mostra(i){
-    if (i === atual) return; atual = i;
-    slides.forEach((s, n) => s.classList.toggle('on', n === i));
-    pontos.forEach((s, n) => s.classList.toggle('on', n === i));
-    etqK.textContent = ROT[i][0]; etqT.textContent = ROT[i][1];
-  }
-  requestAnimationFrame(() => {
-    hero.classList.add('in');
-    document.querySelectorAll('.hero h1 .w').forEach((w, i) => w.style.transitionDelay = (.15 + i * .07) + 's');
-  });
+  if (!reduz.matches) setInterval(() => {
+    if (document.hidden) return;
+    atual = (atual + 1) % slides.length;
+    slides.forEach((s, n) => s.classList.toggle('on', n === atual));
+    document.getElementById('etqK').textContent = ROT[atual][0];
+    document.getElementById('etqT').textContent = ROT[atual][1];
+  }, 3600);
 
-  const GATES = ['(max-width: 720px)','(orientation: portrait) and (max-width: 1024px)','(orientation: portrait) and (pointer: coarse)','(orientation: landscape) and (pointer: coarse) and (max-height: 560px)','(prefers-reduced-motion: reduce)'];
-  const MQLS = GATES.map(q => matchMedia(q));
-  let rolagem = false, timer = null, gotaAtual = -1;
-  const setGota = v => { v = Math.round(v * 100) / 100; if (v === gotaAtual) return; gotaAtual = v; gotasTopo.forEach(g => g.style.setProperty('--g', v)); };
-  function progresso(){
-    const r = hero.getBoundingClientRect();
-    return Math.min(1, Math.max(0, -r.top / (r.height - innerHeight)));
-  }
-  function aoRolar(){
-    const p = progresso();
-    mostra(Math.min(3, Math.floor(p * 4.2)));
-    setGota(.45 + .55 * Math.min(1, p * 1.3));
-  }
-  function modo(){
-    const estatico = MQLS.some(m => m.matches);
-    if (!estatico && !rolagem) {
-      rolagem = true; clearInterval(timer); timer = null;
-      addEventListener('scroll', aoRolar, { passive: true }); aoRolar();
-    } else if (estatico) {
-      if (rolagem) { removeEventListener('scroll', aoRolar); rolagem = false; }
-      if (reduz.matches) { clearInterval(timer); timer = null; setGota(1); return; }
-      setTimeout(() => setGota(1), 300);
-      if (!timer) timer = setInterval(() => { if (!document.hidden) mostra((atual + 1) % slides.length); }, 3400);
-    }
-  }
-  MQLS.forEach(m => m.addEventListener('change', modo));
-  modo();
-
-  // ---------- nav sólida e botão flutuante
-  const nav = document.getElementById('nav'), zap = document.getElementById('zap');
-  let navS = null, zapS = null;
-  function topo(){
-    const s = scrollY > 40; if (s !== navS) { navS = s; nav.classList.toggle('solid', s); }
-    const z = scrollY > innerHeight * .8; if (z !== zapS) { zapS = z; zap.classList.toggle('on', z); }
-  }
-  addEventListener('scroll', topo, { passive: true }); topo();
-  const tampa = new Set();
-  const ioZap = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? tampa.add(e.target) : tampa.delete(e.target)); zap.classList.toggle('esconde', tampa.size > 0); });
-  document.querySelectorAll('#ficha, .final').forEach(el => ioZap.observe(el));
-
-  // ---------- entradas
-  const io = new IntersectionObserver(es => es.forEach(e => {
-    if (!e.isIntersecting) return;
-    e.target.classList.add('in'); io.unobserve(e.target);
-    setTimeout(() => e.target.classList.add('feito'), 1200);
-  }), { rootMargin: '0px 0px -8% 0px' });
+  // entradas
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -6% 0px' });
   document.querySelectorAll('.rev').forEach(el => io.observe(el));
 
-  // pausa animações com a aba escondida
-  document.addEventListener('visibilitychange', () => document.body.classList.toggle('paused', document.hidden));
-  const temas = document.querySelector('.temas');
-  new IntersectionObserver(([e]) => temas.querySelector('.trilho').style.animationPlayState = e.isIntersecting ? '' : 'paused').observe(temas);
+  // categoria ativa na barra rosa
+  const links = [...document.querySelectorAll('.cats a')];
+  const alvos = links.map(a => document.querySelector(a.getAttribute('href')));
+  const catUl = document.querySelector('.cats ul');
+  const ioCat = new IntersectionObserver(es => es.forEach(en => {
+    if (!en.isIntersecting) return;
+    links.forEach((a, i) => a.classList.toggle('on', alvos[i] === en.target));
+    const on = links.find(a => a.classList.contains('on'));
+    if (on) catUl.scrollTo({ left: on.offsetLeft - catUl.clientWidth / 2 + on.clientWidth / 2, behavior: reduz.matches ? 'auto' : 'smooth' });
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  alvos.forEach(el => el && ioCat.observe(el));
 
-  // ---------- filtro da galeria
-  const filtros = [...document.querySelectorAll('.filtros button')];
-  const cards = [...document.querySelectorAll('#grade .card')];
+  // ---------- sacola
+  const FATIAS = { 'Aro 10': 'Serve em média 8 a 10 fatias', 'Aro 15': 'Serve em média 15 a 20 fatias', 'Aro 20': 'Serve em média 25 a 30 fatias', 'Aro 25': 'Serve em média 40 a 50 fatias' };
+  const ITENS = ['Bolo personalizado','Bolo de casamento','Bento cake','Kit festa P','Kit festa M','Docinhos e cupcakes','Caixinha de brigadeiros','Caixinha comemorativa','Bolo vulcão','Mini vulcão red velvet'];
+  const sacola = new Map();
+  const listaSac = document.getElementById('listaSac'), vazia = document.getElementById('vazia');
+  const barraSac = document.getElementById('barraSac'), barraT = document.getElementById('barraT'), contTop = document.getElementById('contTop'), zap = document.getElementById('zap');
+  const form = document.getElementById('ficha'), etapas = [...form.querySelectorAll('.etapa')], barras = [...form.querySelectorAll('.barra i')];
+  const seguir = document.getElementById('seguir'), voltar = document.getElementById('voltar'), resumo = document.getElementById('resumo'), erro = document.getElementById('erro');
+  let e = 0;
+  const total = () => { let n = 0; sacola.forEach(q => n += q); return n; };
+  function desenha(){
+    listaSac.innerHTML = '';
+    sacola.forEach((q, nome) => {
+      const li = document.createElement('li');
+      const s = document.createElement('span'); s.textContent = (q > 1 ? q + 'x ' : '') + nome;
+      const b = document.createElement('button'); b.type = 'button'; b.textContent = '×'; b.setAttribute('aria-label', 'Tirar ' + nome);
+      b.onclick = () => { q > 1 ? sacola.set(nome, q - 1) : sacola.delete(nome); desenha(); };
+      li.append(s, b); listaSac.appendChild(li);
+    });
+    const n = total();
+    vazia.hidden = n > 0;
+    contTop.textContent = n;
+    barraT.textContent = n + (n === 1 ? ' item na sacola' : ' itens na sacola');
+    atualizaBarras();
+    if (e === 3) resumo.textContent = texto();
+  }
+  function poe(nome){ sacola.set(nome, (sacola.get(nome) || 0) + 1); erro.textContent = ''; desenha(); }
+
+  document.querySelectorAll('.prod select[data-aro]').forEach(s => s.addEventListener('change', () => { s.parentElement.querySelector('[data-serve]').textContent = FATIAS[s.value]; }));
+  document.querySelectorAll('.add').forEach(b => b.addEventListener('click', () => {
+    const sel = b.closest('.prod').querySelector('select[data-aro]');
+    poe(b.dataset.item + (sel ? ' (' + sel.value.toLowerCase() + ')' : ''));
+    b.classList.remove('ok'); void b.offsetWidth; b.classList.add('ok');
+  }));
+  const rapido = document.getElementById('rapido'), rapAro = document.getElementById('rapAro');
+  ITENS.forEach(nome => {
+    const b = document.createElement('button'); b.type = 'button'; b.textContent = '+ ' + nome;
+    b.onclick = () => poe(nome === 'Bolo personalizado' ? nome + ' (' + rapAro.value.toLowerCase() + ')' : nome);
+    rapido.appendChild(b);
+  });
+
+  // barra da sacola e botão do WhatsApp somem em cima da ficha
+  let naFicha = false;
+  function atualizaBarras(){
+    const n = total();
+    barraSac.classList.toggle('on', n > 0 && !naFicha);
+    zap.classList.toggle('some', n > 0 || naFicha);
+  }
+  new IntersectionObserver(([en]) => { naFicha = en.isIntersecting; atualizaBarras(); }, { rootMargin: '-20% 0px -20% 0px' }).observe(document.getElementById('pedido'));
+
+  // ---------- galeria
+  const filtros = [...document.querySelectorAll('.filtros button')], cards = [...document.querySelectorAll('#grade .card')];
   filtros.forEach(b => b.addEventListener('click', () => {
     filtros.forEach(x => x.setAttribute('aria-pressed', x === b));
-    const f = b.dataset.f;
-    cards.forEach(c => { c.classList.toggle('fora', f !== 'todos' && c.dataset.c !== f); c.classList.add('in', 'feito'); });
+    cards.forEach(c => c.classList.toggle('fora', b.dataset.f !== 'todos' && c.dataset.c !== b.dataset.f));
   }));
 
   // ---------- tamanhos
   const TAM = {
-    '10': ['Aro 10, o nosso mini', 'Serve em média 8 a 10 fatias', 'Mesversário, parabéns em casa ou presente. Na foto: o primeiro bolinho do ano, aro 10.', .44, '15 cm de mesa'],
-    '15': ['Aro 15, o queridinho', 'Serve em média 15 a 20 fatias', 'Aniversário em família, com os mais chegados. Na foto: tema pintor, aro 15.', .62, '25 cm de mesa'],
-    '20': ['Aro 20, pra festa', 'Serve em média 25 a 30 fatias', 'Festa com convidados, amigos da escola, família toda. Na foto: tema Mickey, aro 20.', .8, '30 cm de mesa'],
-    '25': ['Aro 25, festão', 'Serve em média 40 a 50 fatias', 'Festa grande, salão, muita gente pra cantar parabéns. Na foto: tema Pocoyo, aro 25.', 1, '35 cm de mesa'],
+    '10': ['Aro 10, o mini', 'Mesversário, parabéns em casa ou presente. Na foto: o primeiro bolinho do ano, aro 10.', .46],
+    '15': ['Aro 15, o queridinho', 'Aniversário em família, com os mais chegados. Na foto: tema pintor, aro 15.', .64],
+    '20': ['Aro 20, pra festa', 'Festa com convidados, amigos da escola, família toda. Na foto: tema Mickey, aro 20.', .82],
+    '25': ['Aro 25, festão', 'Festa grande, muita gente pra cantar parabéns. Na foto: tema Pocoyo, aro 25.', 1],
   };
-  const aros = [...document.querySelectorAll('.aros button')];
-  const boloC = document.getElementById('boloC'), imgsAro = [...boloC.querySelectorAll('img')];
-  const tamT = document.getElementById('tamT'), tamS = document.getElementById('tamS'), tamP = document.getElementById('tamP'), tamBtn = document.getElementById('tamBtn');
-  let aroEscolhido = '15';
+  const aros = [...document.querySelectorAll('.aros button')], boloC = document.getElementById('boloC'), imgsAro = [...boloC.querySelectorAll('img')];
+  const tamBtn = document.getElementById('tamBtn');
+  let aro = '15';
   aros.forEach(b => b.addEventListener('click', () => {
-    const a = b.dataset.aro, t = TAM[a]; aroEscolhido = a;
+    aro = b.dataset.aro; const t = TAM[aro];
     aros.forEach(x => x.setAttribute('aria-pressed', x === b));
-    imgsAro.forEach(i => i.classList.toggle('on', i.dataset.aro === a));
-    boloC.style.setProperty('--d', t[3]);
-    tamT.textContent = t[0]; tamS.textContent = t[1]; tamP.textContent = t[2];
-    tamBtn.textContent = 'Quero o aro ' + a;
+    imgsAro.forEach(i => i.classList.toggle('on', i.dataset.aro === aro));
+    boloC.style.setProperty('--d', t[2]);
+    document.getElementById('tamT').textContent = t[0];
+    document.getElementById('tamS').textContent = FATIAS['Aro ' + aro];
+    document.getElementById('tamP').textContent = t[1];
+    tamBtn.textContent = 'Colocar aro ' + aro + ' na sacola';
   }));
+  tamBtn.addEventListener('click', () => { poe('Bolo personalizado (aro ' + aro + ')'); tamBtn.textContent = 'Aro ' + aro + ' na sacola ✓'; });
 
-  // ---------- ficha de pedido
-  const form = document.getElementById('ficha');
-  const etapas = [...form.querySelectorAll('.etapa')], barras = [...form.querySelectorAll('.barra i')];
-  const seguir = document.getElementById('seguir'), voltar = document.getElementById('voltar'), resumo = document.getElementById('resumo');
-  let e = 0;
+  // ---------- ficha
   const val = n => { const el = form.elements[n]; if (!el) return ''; if (el instanceof RadioNodeList) return el.value; if (el.type === 'checkbox') return el.checked; return el.value.trim(); };
-  const pulaTam = () => ['Caixinha de brigadeiros','Docinhos e cupcakes','Pronta entrega','Bolo vulcão','Bento cake'].includes(val('tipo'));
   function dataBR(v){ if (!v) return ''; const [a, m, d] = v.split('-'); const dia = new Date(+a, m - 1, +d).toLocaleDateString('pt-BR', { weekday: 'long' }); return `${d}/${m}/${a} (${dia})`; }
   function texto(){
     const L = ['Oi, Valéria! Vim pelo site e quero fazer um pedido:', ''];
-    L.push('• ' + val('tipo') + (pulaTam() ? '' : ' · ' + val('tam')));
-    if (val('tema')) L.push('• Tema: ' + val('tema'));
-    if (val('nomeTopo')) L.push('• Nome no topo: ' + val('nomeTopo') + (val('idade') ? ', ' + val('idade') : ''));
-    else if (val('idade')) L.push('• Idade: ' + val('idade'));
-    if (val('obs')) L.push('• Detalhes: ' + val('obs'));
-    if (val('ref')) L.push('• Vou mandar a foto de referência');
-    if (val('data')) L.push('• Data: ' + dataBR(val('data')));
-    L.push('• ' + val('ent') + (val('bairro') ? ' · bairro ' + val('bairro') : ''));
+    sacola.forEach((q, nome) => L.push('• ' + (q > 1 ? q + 'x ' : '') + nome));
+    L.push('');
+    if (val('tema')) L.push('Tema: ' + val('tema'));
+    if (val('nomeTopo')) L.push('Nome no topo: ' + val('nomeTopo') + (val('idade') ? ', ' + val('idade') : ''));
+    else if (val('idade')) L.push('Idade: ' + val('idade'));
+    if (val('obs')) L.push('Detalhes: ' + val('obs'));
+    if (val('ref')) L.push('Vou mandar a foto de referência');
+    if (val('data')) L.push('Data: ' + dataBR(val('data')));
+    L.push(val('ent') + (val('bairro') ? ', bairro ' + val('bairro') : ''));
     L.push('', 'Meu nome: ' + (val('nome') || '...'));
     return L.join('\n');
   }
   function vai(n){
-    if (n === 1 && pulaTam()) n = e < 1 ? 2 : 0;
     e = n;
     etapas.forEach((s, i) => s.classList.toggle('on', i === e));
     barras.forEach((b, i) => b.classList.toggle('ok', i <= e));
     voltar.hidden = e === 0;
-    seguir.textContent = e === 4 ? 'Enviar no WhatsApp' : 'Continuar';
-    if (e === 4) resumo.textContent = texto();
-    if (n > 0 && form.getBoundingClientRect().top < 0) form.scrollIntoView({ behavior: reduz.matches ? 'auto' : 'smooth', block: 'start' });
+    seguir.textContent = e === 3 ? 'Enviar no WhatsApp' : 'Continuar';
+    if (e === 3) resumo.textContent = texto();
+    erro.textContent = '';
+    if (form.getBoundingClientRect().top < 0) form.scrollIntoView({ behavior: reduz.matches ? 'auto' : 'smooth', block: 'start' });
   }
   seguir.addEventListener('click', () => {
-    if (e < 4) return vai(e + 1);
+    if (e === 0 && total() === 0) { erro.textContent = 'Coloque pelo menos um item na sacola.'; return; }
+    if (e < 3) return vai(e + 1);
     try { localStorage.setItem('dv-nome', val('nome')); } catch (_) {}
     open('https://wa.me/' + ZAP + '?text=' + encodeURIComponent(texto()), '_blank', 'noopener');
   });
-  voltar.addEventListener('click', () => vai(e === 2 && pulaTam() ? 0 : e - 1));
-  form.addEventListener('input', () => { if (e === 4) resumo.textContent = texto(); });
+  voltar.addEventListener('click', () => vai(e - 1));
+  form.addEventListener('input', () => { if (e === 3) resumo.textContent = texto(); });
   form.addEventListener('submit', ev => ev.preventDefault());
   try { const n = localStorage.getItem('dv-nome'); if (n) form.elements.nome.value = n; } catch (_) {}
-
-  // atalhos que já preenchem a ficha
-  tamBtn.addEventListener('click', () => { form.elements.tipo.value = 'Bolo personalizado'; form.elements.tam.value = 'Aro ' + aroEscolhido; vai(0); });
-  document.querySelectorAll('[data-pre]').forEach(a => a.addEventListener('click', () => { form.elements.tipo.value = a.dataset.pre; form.elements.tam.value = 'Kit P'; vai(0); }));
+  desenha();
 })();
 </script>
 </body>
